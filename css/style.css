@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-right: 30px;
+    background-color: hsl(0, 0%, 95%);
+}
+
+.container {
+    max-width: 900px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 15px;    
+}
+
+.suvs,.luxury,.sedans {
+    margin: 35px;
+}
+
+.box {
+    background-color: hsl(31, 77%, 52%);    
+}
+
+.box-2 {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.box-3 {
+    background-color: hsl(179, 100%, 13%);
+    
+}
+
+section img{
+    margin-bottom: 30px;
+}
+
+section h1,h2,h3 {
+    color: hsl(0, 0%, 95%);
+    font-family: "Big Shoulders Display";
+    font-size: 42px;
+    margin-bottom: 32px;
+}
+
+section p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: "Lexend Deca";
+    max-width: 87%;
+    margin-bottom: 96px;
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+.bt {
+    color: hsl(31, 77%, 52%);
+}
+
+.bt-2 {
+    color: hsl(184, 100%, 22%);
+}
+
+.bt-3 {
+    color: hsl(179, 100%, 13%);
+}
+
+
+button {
+    background-color: hsl(0, 0%, 95%);
+    border: none;
+    padding: 12px 32px;
+    border-radius: 25px;
+    font-family: "Lexend Deca";
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+button:hover {
+    transition-duration: .5s;
+    color: hsla(0, 0%, 100%, 0.75);
+    background-color: transparent;
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+.credits {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 12px;
+}
+
+@media screen and (min-width: 790px) {
+    
+    .box {
+        border-top-left-radius: 8px;
+        border-end-start-radius: 8px;
+    }
+    
+    .box-3 {
+        border-top-right-radius: 8px;
+        border-end-end-radius: 8px;
+    }
+
+}
+
+@media screen and (max-width: 790px) {
+    body {
+        height: auto;
+    }
+
+    .container {
+        width: 355px;
+        flex-direction: column;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .box {
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;        
+    }
+    
+    .box-3 {
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+
+}
+
